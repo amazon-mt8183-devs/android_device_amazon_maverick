@@ -59,9 +59,9 @@ on property:vendor.battery_charging_cv_level=0
     write /sys/devices/platform/charger/top_off_mode 0
 
 #touch gesture wakeup
-on property:vendor.touch_gesture_wakeup=1
+on property:persist.sys.maverick.dt2w=1
     write /sys/touchscreen/link_input_dev/gesture_wakeup 1
-on property:vendor.touch_gesture_wakeup=0
+on property:persist.sys.maverick.dt2w=0
     write /sys/touchscreen/link_input_dev/gesture_wakeup 0
 
 # Create /keys mount point and mount

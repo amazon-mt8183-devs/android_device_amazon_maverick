@@ -63,6 +63,10 @@ PRODUCT_PACKAGES += \
     libmockdrmcryptoplugin \
     libprotobuf-cpp-lite-v28
 
+# DT2W
+PRODUCT_PACKAGES += \
+    DT2W-Service-Maverick
+
 # Graphics
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-service \
