@@ -48,5 +48,8 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 # Platform
 TARGET_BOARD_PLATFORM := mt8183
 
+# Verified Boot
+BOARD_AVB_ENABLE := false
+
 # Inherit the proprietary files
 include vendor/amazon/maverick/BoardConfigVendor.mk
