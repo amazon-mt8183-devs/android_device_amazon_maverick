@@ -1,0 +1,39 @@
+# Audio
+ro.audio.silent=0
+audio.dsp.data.factor=0.11
+ro.audio.monitorRotation=true
+
+# Brand
+Build.BRAND=Amazon
+
+# Camera
+ro.camera.sound.forced=0
+
+# Crypto
+ro.crypto.volume.filenames_mode=aes-256-cts
+
+# Display
+ro.opengles.version=196610
+
+# IPO
+sys.ipo.disable=1
+sys.ipo.pwrdncap=2
+
+# Kernel
+ro.kernel.zio=38,108,105,16
+
+# USB
+ro.sys.usb.bicr=no
+ro.sys.usb.charging.only=yes
+ro.sys.usb.mtp.whql.enable=0
+ro.sys.usb.storage.type=mtp
+ro.vendor.usb.vid=0x1949
+
+# Wi-Fi
+wifi.direct.interface=p2p0
+wifi.interface=wlan0
+wifi.tethering.interface=ap0
+ro.wifi.channels=
+
+# Zygote
+ro.zygote.preload.enable=0

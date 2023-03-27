@@ -68,6 +68,10 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # Platform
 TARGET_BOARD_PLATFORM := mt8183
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Verified Boot
 BOARD_AVB_ENABLE := false
 

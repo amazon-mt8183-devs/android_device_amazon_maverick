@@ -1,0 +1,90 @@
+# Audio
+ro.vendor.mtk_audio_alac_support=1
+ro.vendor.mtk_audio_ape_support=1
+ro.vendor.mtk_audio_tuning_tool_ver=V2.2
+ro.config.alarm_vol_steps=25
+ro.config.media_vol_steps=25
+ro.config.notification_vol_steps=25
+ro.config.ring_vol_steps=25
+ro.config.vc_call_vol_steps=25
+
+# Brand
+Build.BRAND=MTK
+
+# Camera
+camera.disable_zsl_mode=1
+ro.vendor.camera3.zsl.default=140
+ro.vendor.mtk_camera_app_version=3
+vendor.camera.mdp.cz.enable=1
+ro.vendor.mtk_slow_motion_support=1
+
+# Connectivity
+persist.vendor.connsys.chipid=-1
+persist.vendor.connsys.dynamic.dump=0
+persist.vendor.connsys.patch.version=-1
+vendor.connsys.driver.ready=no
+
+# Display
+ro.opengles.version=196610
+ro.vendor.mtk_blulight_def_support=1
+ro.vendor.mtk_pq_color_mode=1
+ro.vendor.mtk_pq_support=2
+
+# DRM
+drm.service.enabled=true
+ro.vendor.amzn_drm_restore_from=idme
+ro.vendor.mtk_widevine_drm_l1_support=1
+ro.vendor.mtk_sec_video_path_support=1
+
+# FM Radio
+fmradio.driver.enable=0
+
+# GPS
+ro.vendor.mtk_gps_support=0
+
+# Logging
+vendor.debug.log.coredump.enable=n
+persist.meta.dumpdata=0
+log.tag.stats_log=I
+persist.log.tag.CdmaMoSms=I
+persist.log.tag.CdmaMtSms=I
+persist.log.tag.DCT=D
+persist.log.tag.RILMUXD=I
+
+# Media
+ro.have_aacencode_feature=1
+vendor.mtk.vdec.waitkeyframeforplay=1
+ro.vendor.mtk_wmv_playback_support=1
+ro.vendor.mtk_support_mp2_playback=1
+ro.vendor.mtk_deinterlace_support=1
+
+# MediaTek
+ro.vendor.mediatek.chip_ver=S01
+ro.vendor.mediatek.platform=MT8183
+ro.vendor.mediatek.version.branch=alps-mp-p0.mp1.tc6sp
+ro.vendor.mediatek.version.release=alps-mp-p0.mp1.tc6sp-of.p12
+
+# Storage
+ro.crypto.volume.filenames_mode=aes-256-cts
+ro.vendor.mtk_f2fs_enable=0
+ro.vendor.mtk_key_manager_support=1
+ro.vendor.mtk_emmc_support=1
+
+# SurfaceFlinger
+debug.sf.disable_backpressure=1
+debug.sf.latch_unsignaled=1
+ro.sf.hwrotation=0
+
+# TEE
+ro.vendor.mtk_in_house_tee_support=true
+
+# USB
+persist.sys.usb.config=mtp
+
+# Wi-Fi
+ro.vendor.wlan.gen=gen3
+vendor.mediatek.wlan.chip=CONSYS_MT8183
+vendor.mediatek.wlan.module.postfix=_consys_mt8183
+ro.vendor.mtk_dhcpv6c_wifi=1
+ro.vendor.wfd.dummy.enable=1
+ro.vendor.wfd.iframesize.level=0
