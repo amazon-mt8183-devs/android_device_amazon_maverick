@@ -71,6 +71,9 @@ ro.vendor.mtk_key_manager_support=1
 ro.vendor.mtk_emmc_support=1
 
 # SurfaceFlinger
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.surface_flinger.running_without_sync_framework=true
 debug.sf.disable_backpressure=1
 debug.sf.latch_unsignaled=1
 ro.sf.hwrotation=0
