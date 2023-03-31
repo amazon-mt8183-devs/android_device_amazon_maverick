@@ -23,6 +23,14 @@ PRODUCT_COPY_FILES += \
 # Characteristics
 PRODUCT_CHARACTERISTICS := tablet
 
+# Media
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
+
+PRODUCT_COPY_FILES += \
+    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.mt8183.rc \
