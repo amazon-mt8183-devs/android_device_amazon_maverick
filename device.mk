@@ -26,7 +26,9 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libalsautils \
     libnbaio_mono \
-    libtinyxml
+    libtinyxml \
+    libmedia_helper-v28 \
+    libxml2-v28
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)

@@ -61,6 +61,10 @@ function blob_fixup() {
         vendor/lib*/libnvram.so)
             "${PATCHELF}" --add-needed "libshim_nvram.so" "${2}"
             ;;
+        vendor/lib/hw/audio.primary.mt8183.so)
+            "${PATCHELF}" --replace-needed "libmedia_helper.so" "libmedia_helper-v28.so" "${2}"
+            "${PATCHELF}" --replace-needed "libxml2.so" "libxml2-v28.so" "${2}"
+            ;;
         vendor/lib*/hw/keystore.mt8183.so)
             "${PATCHELF}" --add-needed "libshim_keymaster.so" "${2}"
             ;;
