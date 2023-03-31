@@ -159,6 +159,7 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     init.sensor_1_0.rc \
     fstab.mt8183 \
+    fstab.mt8183_ramdisk \
     ueventd.mt8183.rc
 
 # Screen Resolution
