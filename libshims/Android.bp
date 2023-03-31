@@ -16,3 +16,10 @@ cc_library_shared {
         srcs: ["libshim_keymaster.cpp"],
         proprietary: true,
 }
+
+cc_library_shared {
+        name: "libshim_hostapd",
+        srcs: ["libshim_hostapd.cpp"],
+        shared_libs: ["libbinder"],
+        proprietary: true,
+}

@@ -55,6 +55,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+	    vendor/bin/hw/hostapd)
+            "${PATCHELF}" --add-needed "libshim_hostapd.so" "${2}"
+            ;;
 	    vendor/lib*/libnvram.so)
             "${PATCHELF}" --add-needed "libshim_nvram.so" "${2}"
             ;;
