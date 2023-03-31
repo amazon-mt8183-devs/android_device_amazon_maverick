@@ -46,6 +46,14 @@ PRODUCT_PACKAGES += \
 # Characteristics
 PRODUCT_CHARACTERISTICS := tablet
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl \
+    android.hardware.drm@1.0-service \
+    android.hardware.drm@1.1-service.clearkey \
+    libdrmclearkeyplugin \
+    libmockdrmcryptoplugin
+
 # Media
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
