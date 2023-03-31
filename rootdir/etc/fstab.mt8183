@@ -1,7 +1,7 @@
 # Android fstab file.
 #<src>                                           <mnt_point>      <type> <mnt_flags and options>                           <fs_mgr_flags>
-/dev/block/platform/bootdevice/by-name/system    /system            ext4 ro                                                wait,verify,first_stage_mount
-/dev/block/platform/bootdevice/by-name/vendor    /vendor            ext4 ro                                                wait,verify,first_stage_mount
+/dev/block/platform/bootdevice/by-name/system    /system            ext4 ro                                                wait,first_stage_mount
+/dev/block/platform/bootdevice/by-name/vendor    /vendor            ext4 ro                                                wait,first_stage_mount
 /dev/block/platform/bootdevice/by-name/userdata  /data              ext4 noatime,nosuid,nodev,noauto_da_alloc,errors=remount-ro wait,check,formattable,quota,reservedsize=128m,encryptable=/dev/block/platform/bootdevice/by-name/metadata
 /dev/block/platform/bootdevice/by-name/cache     /cache             ext4 noatime,nosuid,nodev,noauto_da_alloc,discard      wait,check,formattable
 /dev/block/platform/bootdevice/by-name/nvcfg     /mnt/vendor/nvcfg  ext4 noatime,nosuid,nodev,noauto_da_alloc,discard      wait,check,formattable,notrim
