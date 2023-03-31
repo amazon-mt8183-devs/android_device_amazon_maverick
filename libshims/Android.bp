@@ -10,3 +10,9 @@ cc_library_shared {
     shared_libs: ["libbase"],
     proprietary: true,
 }
+
+cc_library_shared {
+        name: "libshim_keymaster",
+        srcs: ["libshim_keymaster.cpp"],
+        proprietary: true,
+}
