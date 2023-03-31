@@ -8,6 +8,9 @@
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
+# Characteristics
+PRODUCT_CHARACTERISTICS := tablet
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.mt8183.rc \
