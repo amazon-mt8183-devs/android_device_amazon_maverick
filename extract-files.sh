@@ -55,6 +55,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/bin/hw/camerahalserver)
+            "${PATCHELF}" --add-needed "libunwindstack.so" "${2}"
+            ;;
         vendor/bin/hw/hostapd)
             "${PATCHELF}" --add-needed "libshim_hostapd.so" "${2}"
             ;;
