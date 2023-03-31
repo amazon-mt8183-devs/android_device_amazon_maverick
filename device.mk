@@ -125,6 +125,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy)
 
+# Sensors
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-service \
