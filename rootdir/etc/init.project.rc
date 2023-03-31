@@ -3,10 +3,6 @@
 # PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
 #
 
-# MTK project .rc configure
-import /vendor/etc/init/hw/init.mdump.rc
-import /vendor/etc/init/hw/init.coredump.rc
-
 on init
     mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
     mkdir /storage/usbotg 0700 root root
@@ -14,10 +10,8 @@ on init
 on boot
     write /proc/sys/vm/min_free_kbytes 32768
 
-
 on post-fs-data
-
-#Camera
+    #Camera
     chmod 0660 /dev/MAINAF
     chown system camera /dev/MAINAF
 
@@ -39,36 +33,16 @@ on post-fs-data
     chmod 0660 /dev/BU64745GWZAF
     chown system camera /dev/BU64745GWZAF
 
-#SMB
+    #SMB
     chown system system /proc/smb/ScreenComm
     chmod 0660 /proc/smb/ScreenComm
 
     chmod 0660 /dev/spm
     chown system system /dev/spm
 
-
-service hdmi /system/bin/hdmi
-        class main
-        user system
-        group system net_admin inet
-
 on init
     # silent ota
     chown system system /sys/class/leds/lcd-backlight/silent
-
-    # Refer to http://source.android.com/devices/tech/storage/index.html
-    # It said, "Starting in Android 4.4, multiple external storage devices are surfaced to developers through
-    #           Context.getExternalFilesDirs(), Context.getExternalCacheDirs(), and Context.getObbDirs().
-    #           External storage devices surfaced through these APIs must be a semi-permanent part of the device (such as an SD card slot in a battery compartment).
-    #           Developers expect data stored in these locations to be available over long periods of time."
-    # Therefore, if the target doesn't support sd hot-plugging (Ex: the SD card slot in a battery compartment), we need to export SECONDARY_STORAGE in 'boot' section
-    #
-    # export SECONDARY_STORAGE /storage/sdcard1
-    export DOWNLOAD_CACHE /cache
-
-service fuse_usbotg /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/usbotg /storage/usbotg
-    class late_start
-    disabled
 
 # CABC
 on property:vendor.hwc.video_mode=1
@@ -97,10 +71,3 @@ on post-fs-data && property:ro.boot.mnt_keys_rw_opts=rw
 on post-fs-data && property:ro.boot.mnt_keys_rw_opts=ro
     mkdir /mnt/vendor/keys 0751 root system
     mount_all /vendor/etc/fstab.mount_keys.ro
-
-# Update the dm-verity state to partition.*.verified properties
-on post-fs-data
-    verity_update_state
-
-# Import perfmonitord
-import init.perfmonitord_tablet.rc

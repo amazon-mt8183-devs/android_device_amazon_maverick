@@ -9,7 +9,6 @@ PRODUCT_PACKAGES += \
     init.mt8183.rc \
     init.mt8183.usb.rc \
     init.connectivity.rc \
-    init.modem.rc \
     init.project.rc \
     init.sensor_1_0.rc \
     fstab.mt8183 \
