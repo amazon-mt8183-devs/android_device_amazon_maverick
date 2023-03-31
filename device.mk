@@ -57,7 +57,8 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.1-service.clearkey \
     libdrmclearkeyplugin \
-    libmockdrmcryptoplugin
+    libmockdrmcryptoplugin \
+    libprotobuf-cpp-lite-v28
 
 # Graphics
 PRODUCT_PACKAGES += \
