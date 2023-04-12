@@ -173,6 +173,9 @@ PRODUCT_PACKAGES += \
     fstab.mt8183_ramdisk \
     ueventd.mt8183.rc
 
+PRODUCT_PACKAGES += \
+    init.recovery.mt8183.rc
+
 # Screen Resolution
 TARGET_SCREEN_WIDTH := 1200
 TARGET_SCREEN_HEIGHT := 1920
