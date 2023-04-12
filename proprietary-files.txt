@@ -841,6 +841,12 @@ vendor/etc/init/hostapd.android.rc
 vendor/lib64/fireos.hardware.connectivity.networkpower@1.0.so
 vendor/lib64/fireos.hardware.connectivity@1.0.so
 
+# Wi-Fi (Kernel Modules) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+vendor/lib/modules/wlan_drv_gen3.ko|8ae5725d31865dc2cbcf7b07afa20b3b3b9cda1f
+vendor/lib/modules/wmt_chrdev_wifi.ko|a801bbae8af875a7947acf19aa1b925e27aa8dfa
+vendor/lib/modules/wmt_drv.ko|74a65e424b6dee6cc50fd68ab7333e22d88c7340
+vendor/lib/modules/bt_drv.ko|c78b885629f0c4e43428e85efc9b6c1fe085f443
+
 # Wi-Fi (Service/Impl)
 vendor/bin/hw/android.hardware.wifi@1.0-service-mediatek
 vendor/bin/hw/fireos.hardware.connectivity.networkpower@1.0-service
