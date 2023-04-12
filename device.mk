@@ -51,6 +51,9 @@ PRODUCT_PACKAGES += \
 # Characteristics
 PRODUCT_CHARACTERISTICS := tablet
 
+# Dalvik
+$(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
