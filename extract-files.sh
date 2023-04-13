@@ -58,9 +58,6 @@ function blob_fixup() {
         vendor/bin/hw/camerahalserver)
             "${PATCHELF}" --add-needed "libunwindstack.so" "${2}"
             ;;
-        vendor/bin/hw/hostapd)
-            "${PATCHELF}" --add-needed "libshim_hostapd.so" "${2}"
-            ;;
         vendor/lib*/libnvram.so)
             "${PATCHELF}" --add-needed "libshim_nvram.so" "${2}"
             ;;

@@ -829,31 +829,27 @@ vendor/lib/libcommon_time_client_vendor.so
 vendor/lib64/fireos.hardware.localtime@1.0.so
 vendor/lib64/libcommon_time_client_vendor.so
 
-# Wi-Fi (HAL)
-vendor/lib64/libwifi-hal.so
+# Wi-Fi (Service/Impl) - from full_px556_kw-user 10 QP1A.190711.020 1585833944 release-keys
+vendor/bin/hostapd_cli|2d267f7e8c00ef0d7ee6c683aa400cb176fcb25c
+vendor/bin/hw/android.hardware.wifi@1.0-service-lazy-mediatek|11de651333ef53a2d426fce3bb6d6d95544c27eb
+vendor/bin/hw/hostapd|ef3ae9d442f36473155730e0e48e6ff0470d3a71
+vendor/bin/hw/wpa_supplicant|7ff5f67b28aca979dbf6edf291f50cb84fdfa7c7
+vendor/etc/init/android.hardware.wifi@1.0-service-lazy-mediatek.rc|bd3726847a0068d4e252b2d4f5c168b38b982074
+vendor/etc/init/hostapd.android.rc|0f8128bb83c4cbe80760f1a040960cfe439d2d6f
+vendor/lib64/libwapi.so|f2b823612ebbc045c90a44a4806165247fbbfad8
+vendor/lib64/libwifi-hal.so|bdc95a83b30b68a04ed1bce171f77586e6bc7262
+vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so|b71d1cac0a17c37a628dbfc806c47fec3addcca1
+vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so|4af9d9e28dac45043c140e7db8ab15a68e6a95c7
 
-# Wi-Fi (hostapd)
-vendor/bin/hostapd_cli
-vendor/bin/hw/hostapd
-vendor/etc/init/hostapd.android.rc
-
-# Wi-Fi (Interfaces)
-vendor/lib64/fireos.hardware.connectivity.networkpower@1.0.so
-vendor/lib64/fireos.hardware.connectivity@1.0.so
+# Wi-Fi (Init Scripts)
+vendor/etc/init/init.wlan_drv.rc
+vendor/etc/init/init_connectivity.rc
 
 # Wi-Fi (Kernel Modules) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
+vendor/lib/modules/bt_drv.ko|c78b885629f0c4e43428e85efc9b6c1fe085f443
 vendor/lib/modules/wlan_drv_gen3.ko|8ae5725d31865dc2cbcf7b07afa20b3b3b9cda1f
 vendor/lib/modules/wmt_chrdev_wifi.ko|a801bbae8af875a7947acf19aa1b925e27aa8dfa
 vendor/lib/modules/wmt_drv.ko|74a65e424b6dee6cc50fd68ab7333e22d88c7340
-vendor/lib/modules/bt_drv.ko|c78b885629f0c4e43428e85efc9b6c1fe085f443
-
-# Wi-Fi (Service/Impl)
-vendor/bin/hw/android.hardware.wifi@1.0-service-mediatek
-vendor/bin/hw/fireos.hardware.connectivity.networkpower@1.0-service
-vendor/etc/init/android.hardware.wifi@1.0-service-mediatek.rc
-vendor/etc/init/fireos.hardware.connectivity.networkpower@1.0-service.rc
-vendor/etc/init/init.wlan_drv.rc
-vendor/etc/init/init_connectivity.rc
 
 # Wi-Fi (WMT)
 vendor/bin/wmt_concurrency
@@ -862,7 +858,3 @@ vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
 vendor/bin/wmt_loopback
 vendor/etc/init/init.wmt_drv.rc
-
-# Wi-Fi (wpa_supplicant)
-vendor/bin/hw/wpa_supplicant
-vendor/lib64/WifiMetrics.so
