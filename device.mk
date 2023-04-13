@@ -152,7 +152,8 @@ PRODUCT_PACKAGES += \
 # Shims
 PRODUCT_PACKAGES += \
     libshim_nvram \
-    libshim_keymaster
+    libshim_keymaster \
+    libshim_omx
 
 # Thermal
 PRODUCT_PACKAGES += \
