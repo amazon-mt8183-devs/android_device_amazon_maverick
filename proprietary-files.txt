@@ -832,8 +832,8 @@ vendor/lib64/libcommon_time_client_vendor.so
 # Wi-Fi (Service/Impl) - from full_px556_kw-user 10 QP1A.190711.020 1585833944 release-keys
 vendor/bin/hostapd_cli|2d267f7e8c00ef0d7ee6c683aa400cb176fcb25c
 vendor/bin/hw/android.hardware.wifi@1.0-service-lazy-mediatek|11de651333ef53a2d426fce3bb6d6d95544c27eb
-vendor/bin/hw/hostapd|ef3ae9d442f36473155730e0e48e6ff0470d3a71
-vendor/bin/hw/wpa_supplicant|7ff5f67b28aca979dbf6edf291f50cb84fdfa7c7
+vendor/bin/hw/hostapd|ef3ae9d442f36473155730e0e48e6ff0470d3a71|fb9266b3ae653bba88a1f08ebb3b72539db0dad9
+vendor/bin/hw/wpa_supplicant|7ff5f67b28aca979dbf6edf291f50cb84fdfa7c7|9b69218f731872896e74a7398b250c79741f9ddb
 vendor/etc/init/android.hardware.wifi@1.0-service-lazy-mediatek.rc|bd3726847a0068d4e252b2d4f5c168b38b982074
 vendor/etc/init/hostapd.android.rc|0f8128bb83c4cbe80760f1a040960cfe439d2d6f
 vendor/lib64/libwapi.so|f2b823612ebbc045c90a44a4806165247fbbfad8
