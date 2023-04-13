@@ -52,6 +52,7 @@ persist.log.tag.DCT=D
 persist.log.tag.RILMUXD=I
 
 # Media
+debug.stagefright.ccodec=0
 ro.have_aacencode_feature=1
 vendor.mtk.vdec.waitkeyframeforplay=1
 ro.vendor.mtk_wmv_playback_support=1
