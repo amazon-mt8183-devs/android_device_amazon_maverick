@@ -58,6 +58,7 @@ vendor.mtk.vdec.waitkeyframeforplay=1
 ro.vendor.mtk_wmv_playback_support=1
 ro.vendor.mtk_support_mp2_playback=1
 ro.vendor.mtk_deinterlace_support=1
+media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # MediaTek
 ro.vendor.mediatek.chip_ver=S01
