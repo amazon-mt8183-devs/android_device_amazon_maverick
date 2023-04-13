@@ -16,3 +16,10 @@ cc_library_shared {
         srcs: ["libshim_keymaster.cpp"],
         proprietary: true,
 }
+
+cc_library_shared {
+    name: "libshim_omx",
+    srcs: ["libshim_omx.cpp"],
+    shared_libs: ["libui"],
+    proprietary: true,
+}
