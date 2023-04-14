@@ -26,9 +26,9 @@ vendor.connsys.driver.ready=no
 
 # Display
 ro.opengles.version=196610
-ro.vendor.mtk_blulight_def_support=1
-ro.vendor.mtk_pq_color_mode=1
-ro.vendor.mtk_pq_support=2
+ro.vendor.mtk_blulight_def_support=0
+ro.vendor.mtk_pq_color_mode=0
+ro.vendor.mtk_pq_support=0
 
 # DRM
 drm.service.enabled=true
