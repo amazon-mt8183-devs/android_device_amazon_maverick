@@ -172,6 +172,7 @@ PRODUCT_PACKAGES += \
     init.connectivity.rc \
     init.project.rc \
     init.sensor_1_0.rc \
+    init.target.rc \
     fstab.mt8183 \
     fstab.mt8183_ramdisk \
     ueventd.mt8183.rc
