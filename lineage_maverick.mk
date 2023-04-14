@@ -10,6 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # Inherit from device makefile.
 $(call inherit-product, device/amazon/maverick/device.mk)
+$(call inherit-product, device/amazon/maverick/go_opt.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
