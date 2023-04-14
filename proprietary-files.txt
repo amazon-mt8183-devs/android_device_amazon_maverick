@@ -486,11 +486,6 @@ vendor/etc/init/init.cccirpcd.rc|007d95a9cfe9f8e596b2e25690e12a82d0f8753f
 vendor/lib/libccci_util.so|5ed55752e09c53ec6d5dd3189e1619442316c165
 vendor/lib/libstorage_otp.so|715766171facd7da0f3182ce49b1a292081296d9
 
-# Charge Logger
-vendor/bin/charge_logger
-vendor/etc/charge_logger.conf
-vendor/etc/init/init.charge_logger.rc
-
 # DHA (Binaries) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/bin/amzn_dha_hmac|3780af07cba3a10c8ee954faad359c7f65f81ea2
 vendor/bin/amzn_dha_tool|e0b7fda430cd2f5361ceafb2e80d2d9a19cbfe50
