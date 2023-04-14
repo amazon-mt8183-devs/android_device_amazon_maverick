@@ -36,6 +36,9 @@ ro.vendor.amzn_drm_restore_from=idme
 ro.vendor.mtk_widevine_drm_l1_support=1
 ro.vendor.mtk_sec_video_path_support=1
 
+# Fdsan
+debug.fdsan=warn_once
+
 # FM Radio
 fmradio.driver.enable=0
 
