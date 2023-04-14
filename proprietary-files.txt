@@ -782,11 +782,9 @@ vendor/etc/init/android.hardware.sensors@1.0-service-mediatek.rc|cd20534ade7e34c
 vendor/lib/hw/android.hardware.sensors@1.0-impl-mediatek.so|e1d781e5b5e49d79643dbff5738cf5b836b23d5e
 
 # Thermal (Binaries) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
-vendor/bin/thermal_manager|2b79526f82e1d76cb02327755dc3912f06e05cfc
 vendor/bin/thermalloadalgod|e8a488fdf9ed968fe38ac09230b45be484160526
 vendor/bin/thermal|ddb4a4a4c4cd9285770b4587517e70490f9b16e3
 vendor/etc/init/init.thermal.rc|cb4f259f720f2481a3e9b4d68d7c72193c554faa
-vendor/etc/init/init.thermal_manager.rc|764c19af5e285345a9fd5b75131fa9588b609d62
 vendor/etc/init/init.thermalloadalgod.rc|d70cde3b8a1a1607f7a99475b3357a894907458f
 
 # Thermal (Configs) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
