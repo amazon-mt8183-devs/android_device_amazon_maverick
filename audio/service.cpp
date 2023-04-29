@@ -96,19 +96,14 @@ int main(int /* argc */, char* /* argv */ []) {
     const std::vector<InterfacesList> mandatoryInterfaces = {
         {
             "Audio Core API",
-            "android.hardware.audio@7.1::IDevicesFactory",
-            "android.hardware.audio@7.0::IDevicesFactory",
-            "android.hardware.audio@6.0::IDevicesFactory",
-            "android.hardware.audio@5.0::IDevicesFactory",
-            "android.hardware.audio@4.0::IDevicesFactory",
+            "fireos.hardware.audio@4.0::IDevicesFactory",
+            "fireos.hardware.audio@2.0::IDevicesFactory",
         },
         {
             "Audio Effect API",
-            "android.hardware.audio.effect@7.0::IEffectsFactory",
-            "android.hardware.audio.effect@6.0::IEffectsFactory",
-            "android.hardware.audio.effect@5.0::IEffectsFactory",
             "android.hardware.audio.effect@4.0::IEffectsFactory",
-        }
+            "android.hardware.audio.effect@2.0::IEffectsFactory",
+        },
     };
 
     const std::vector<InterfacesList> optionalInterfaces = {
@@ -130,6 +125,14 @@ int main(int /* argc */, char* /* argv */ []) {
             "Bluetooth Audio Offload API",
             "android.hardware.bluetooth.a2dp@1.0::IBluetoothAudioOffload"
         }
+    };
+
+    const std::vector<InterfacesList> fosInterfaces = {
+        {
+            "FireOS Audio API",
+            "fireos.hardware.avsync@1.0::IAVSyncBridgeFactory",
+            "fireos.hardware.audiosignalprocessor@1.0::IHalAudioSignalProcessor",
+        },
     };
 
     const std::vector<std::pair<std::string,std::string>> optionalInterfaceSharedLibs = {
@@ -162,6 +165,13 @@ int main(int /* argc */, char* /* argv */ []) {
         } else {
             ALOGW("%s() from %s failed", interfaceLoaderFuncName.c_str(), libraryName.c_str());
         }
+    }
+
+    for (const auto& listIter : fosInterfaces) {
+        auto iter = listIter.begin();
+        const std::string& interfaceFamilyName = *iter++;
+        LOG_ALWAYS_FATAL_IF(!registerPassthroughServiceImplementations(iter, listIter.end()),
+                            "Could not register %s", interfaceFamilyName.c_str());
     }
 
     joinRpcThreadpool();
