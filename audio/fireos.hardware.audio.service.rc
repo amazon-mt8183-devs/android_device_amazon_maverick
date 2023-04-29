@@ -1,3 +1,6 @@
+on post-fs-data
+    mkdir /data/vendor/audiohal 0771 audioserver audio
+
 service vendor.audio-hal /vendor/bin/hw/fireos.hardware.audio.service
     class hal
     user audioserver
