@@ -10,7 +10,6 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio.a2dp.default \
     audio.bluetooth.default \
     audio.usb.default \
     audio.r_submix.default
