@@ -15,6 +15,9 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default
 
 PRODUCT_PACKAGES += \
+    fireos.hardware.audio.service
+
+PRODUCT_PACKAGES += \
     android.hardware.audio.common@4.0-util-v28
 
 PRODUCT_PACKAGES += \

@@ -1,0 +1,26 @@
+cc_binary {
+    name: "fireos.hardware.audio.service",
+
+    init_rc: ["fireos.hardware.audio.service.rc"],
+    relative_install_path: "hw",
+    compile_multilib: "32",
+    vendor: true,
+
+    srcs: ["service.cpp"],
+
+    cflags: [
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+    ],
+
+    shared_libs: [
+        "libcutils",
+        "libbinder",
+        "libbinder_ndk",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+        "libhardware",
+    ],
+}

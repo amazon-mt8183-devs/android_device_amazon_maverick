@@ -7,10 +7,8 @@ vendor/lib64/libamazonlog.so
 # Audio - from maverick-user 9 PS7312 1271 amz-p,release-keys
 vendor/bin/atcid|5d4d03c9c92ef1ac92c6da65ed845b2c50bc17f1
 vendor/bin/audiocmdservice_atci|f86d9c17573b836b57ddb242cb1b6eb898a3afae
-vendor/bin/hw/fireos.hardware.audio@2.0-service|5cb39c68e3d58bc2a6faa1d9e56891f05fb0cb03
 vendor/etc/init/atcid.rc|f28d6730c3cdd44d54509993f533d682425cd368
 vendor/etc/init/audiocmdservice_atci.rc|c2bda8827aa2dff8c502f2ecbfcf535b6517ca89
-vendor/etc/init/fireos.hardware.audio@2.0-service.rc|018a593b8919edcb6099b179316b85cce8081f39
 vendor/lib/fireos.hardware.audio@2.0.so|007c7c99c914883307e766ba1d99c1d4abd75637
 vendor/lib/fireos.hardware.audio@4.0.so|9a91f625890125eeea825a3acc1171303ccd17ad
 vendor/lib/fireos.hardware.audiosignalprocessor@1.0.so|3da73fa94698f47b40a15c8a27cc4f23044b84aa
