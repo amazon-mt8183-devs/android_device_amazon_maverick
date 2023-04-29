@@ -74,7 +74,6 @@ on charger
 on fs
     write /proc/bootprof "INIT:Mount_START"
     write /sys/kernel/debug/tracing/trace_marker "B|1|Mount"
-    exec /system/bin/resize2fs -f /dev/block/platform/bootdevice/by-name/userdata
     mkdir /mnt/vendor/nvcfg
     mount_all /vendor/etc/fstab.mt8183
     write /sys/kernel/debug/tracing/trace_marker "E"
