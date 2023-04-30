@@ -23,3 +23,19 @@ cc_library_shared {
     shared_libs: ["libui"],
     proprietary: true,
 }
+
+cc_library_shared {
+    name: "libshim_mtkcam",
+    proprietary: true,
+    compile_multilib: "32",
+    srcs: [
+        "libinput/PropertyMap.cpp",
+        "libinput/PropertyMap_fuzz.cpp",
+    ],
+    include_dirs: [ "frameworks/native/include" ],
+    shared_libs: [
+        "libutils",
+        "libbase",
+        "liblog",
+    ],
+}
