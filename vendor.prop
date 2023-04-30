@@ -110,9 +110,6 @@ ro.sf.hwrotation=0
 # TEE
 ro.vendor.mtk_in_house_tee_support=true
 
-# USB
-persist.sys.usb.config=mtp
-
 # Wi-Fi
 ro.vendor.wlan.gen=gen3
 vendor.mediatek.wlan.chip=CONSYS_MT8183
