@@ -18,7 +18,7 @@ vendor/lib/hw/audio.primary.mt8183.so|5a4c5a8c424a3d4a8a943f5c136ec6c3876c4876|3
 vendor/lib/hw/audio.r_submix.mt8183.so|d86169ba79e27e7126e3e43ecb73c8eb08be8526
 vendor/lib/hw/audio.usb.mt8183.so|56c5dde0e03ce3037ffed735ac562ca85a2f64da
 vendor/lib/hw/audio.voice_dsp.default.so|e788c4b2fc2a3331172f181aaa5c31d9e5c27c60
-vendor/lib/hw/fireos.hardware.audio@4.0-impl.so|598de997743ada9a97b99efc87f66a016c221391|8580aae2e9267c941422d0c35b86366ac3963ee5
+vendor/lib/hw/fireos.hardware.audio@4.0-impl.so|598de997743ada9a97b99efc87f66a016c221391|f2dc4697da4622b312cc3be1552d851b7f610b04
 vendor/lib/hw/fireos.hardware.audiosignalprocessor@1.0-impl.so|bd81c3687204d9c8b362f6fdffd5daac4d16bc49
 vendor/lib/libMtkSpeechEnh.so|e95d0fa7150e28a05ebf319138f42ed595ddfeb7
 vendor/lib/lib_iir.so|d407555b846ce084aee36d24a7cf070bcae38ffb

@@ -85,6 +85,7 @@ function blob_fixup() {
             ;;
         vendor/lib/hw/fireos.hardware.audio@4.0-impl.so)
             "${PATCHELF}" --replace-needed "android.hardware.audio.common@4.0-util.so" "android.hardware.audio.common@4.0-util-v28.so" "${2}"
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.2-impl.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
