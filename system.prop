@@ -25,9 +25,6 @@ sys.ipo.pwrdncap=2
 # Kernel
 ro.kernel.zio=38,108,105,16
 
-# Set lowram options
-ro.config.low_ram=true
-
 # set threshold to filter unused apps
 pm.dexopt.downgrade_after_inactive_days=10
 
