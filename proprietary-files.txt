@@ -14,11 +14,11 @@ vendor/lib/fireos.hardware.audio@4.0.so|9a91f625890125eeea825a3acc1171303ccd17ad
 vendor/lib/fireos.hardware.audiosignalprocessor@1.0.so|3da73fa94698f47b40a15c8a27cc4f23044b84aa
 vendor/lib/fireos.hardware.avsync@1.0.so|f2c2409db22005f0b733d752ec14e5113a064921
 vendor/lib/hw/android.hardware.audio.effect@4.0-impl.so|9420e137d8e993bb4fa6321a6fc6e7b801ffd432
-vendor/lib/hw/audio.primary.mt8183.so|302d90a2535445878adf93162fa46d66253b5e9b
+vendor/lib/hw/audio.primary.mt8183.so|5a4c5a8c424a3d4a8a943f5c136ec6c3876c4876|302d90a2535445878adf93162fa46d66253b5e9b
 vendor/lib/hw/audio.r_submix.mt8183.so|d86169ba79e27e7126e3e43ecb73c8eb08be8526
 vendor/lib/hw/audio.usb.mt8183.so|56c5dde0e03ce3037ffed735ac562ca85a2f64da
 vendor/lib/hw/audio.voice_dsp.default.so|e788c4b2fc2a3331172f181aaa5c31d9e5c27c60
-vendor/lib/hw/fireos.hardware.audio@4.0-impl.so|8580aae2e9267c941422d0c35b86366ac3963ee5
+vendor/lib/hw/fireos.hardware.audio@4.0-impl.so|598de997743ada9a97b99efc87f66a016c221391|8580aae2e9267c941422d0c35b86366ac3963ee5
 vendor/lib/hw/fireos.hardware.audiosignalprocessor@1.0-impl.so|bd81c3687204d9c8b362f6fdffd5daac4d16bc49
 vendor/lib/libMtkSpeechEnh.so|e95d0fa7150e28a05ebf319138f42ed595ddfeb7
 vendor/lib/lib_iir.so|d407555b846ce084aee36d24a7cf070bcae38ffb
@@ -471,7 +471,7 @@ vendor/lib/vendor.mediatek.hardware.camera.ccap@1.0.so|87f654ee87cf887ea4b0d05da
 vendor/lib/vendor.mediatek.hardware.camera.lomoeffect@1.0.so|d0be7ab7f408e39ec5e88e67432dccd134a8d118
 
 # Camera (Service/Impl) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
-vendor/bin/hw/camerahalserver|c4ac4f72fc41565b8762764f6b63706fdf43f2e5
+vendor/bin/hw/camerahalserver|fe88a649fe75d03bc7791e0e7b895253ccd29359|c4ac4f72fc41565b8762764f6b63706fdf43f2e5
 vendor/bin/mtkcam-debug|714c8c568cb8bbaa88a5a933fe52c1a0b4db5be2
 vendor/etc/init/camerahalserver.rc|88ddae216909ebfe05b56e504ff8f05e45542dba
 vendor/lib/hw/android.hardware.camera.provider@2.4-impl-mediatek.so|7b2d4a348f09d1d1202b22081b56352456180375
@@ -512,7 +512,7 @@ vendor/etc/init/pr_device_cert_id.rc|df5b6b071a80dbfb370062f6de181662541dbe3e
 # DRM (Crypto) - from maverick-user 9 PS7327.3326N 0026743733760 amz-p,release-keys
 vendor/lib/liboemcrypto.so|08f369ed67141f05a998d78da205b4ec804500f8
 vendor/lib/libplayready.so|6483ecb1b43fa9521b92cc20150c4a2939f896ae
-vendor/lib/libwvhidl.so|d6b7fcd669049b39f9b0fc2eb5497260938658a4
+vendor/lib/libwvhidl.so|0f216d062bdc0b2ab2118b93eed67cfcd2b6a51e|d6b7fcd669049b39f9b0fc2eb5497260938658a4
 vendor/lib/mediadrm/libplayreadydrmplugin.so|33d94c6515f24fde006b1103f7a1e8ad0fb06975
 
 # DRM (Dependencies)
