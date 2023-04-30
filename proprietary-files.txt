@@ -637,9 +637,9 @@ vendor/lib64/hw/vendor.mediatek.hardware.keymanage@1.0-impl.so
 vendor/bin/kisd
 vendor/etc/init/kisd.rc
 
-# Ladder - from lancelot-user 11 RP1A.200720.011 V12.5.2.0.RJCINXM release-keys
-vendor/lib/libladder.so|b3161af9c1ae115b467ed6d210355348717145c8
-vendor/lib64/libladder.so|47ab171fde2026c25c0c63f0af9bfcee3fcd74a9
+# Ladder - from ares-user 13 TP1A.220624.014 V14.0.2.0.TKJCNXM release-keys
+vendor/lib/libladder.so|ab3c533149a4e7706e9027b1a0fe72fc12bfdf24
+vendor/lib64/libladder.so|a70bf660f2d5ff2af59cd74cadf49081539bb95f
 
 # Media (Binaries)
 vendor/bin/jpegtool
