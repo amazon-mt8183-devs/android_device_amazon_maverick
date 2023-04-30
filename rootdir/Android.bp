@@ -51,3 +51,10 @@ prebuilt_etc {
     src: "etc/fstab.mt8183",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "ueventd.mt8183.rc",
+    filename: "ueventd.rc",
+    src: "etc/ueventd.mt8183.rc",
+    vendor: true,
+}
