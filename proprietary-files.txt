@@ -378,7 +378,7 @@ vendor/lib/libcam.hal3a.v3.lsctbl.50.so|208ebdf6ce9710c5205c0d2a47943944394199f2
 vendor/lib/libcam.hal3a.v3.nvram.50.so|7c2db98885a8190f62d21ede01a59e595218738c
 vendor/lib/libcam.hal3a.v3.so|4d89ae49e42ac183dabc3838a92e0c851bcb9bd9
 vendor/lib/libcam.halisp.so|98bbdbdf456fc5f5a68f1ce3c55450ac57ce7a17
-vendor/lib/libcam.halsensor.so|ae98257dfd64066747dfb35345ec1439208d915c
+vendor/lib/libcam.halsensor.so|ae98257dfd64066747dfb35345ec1439208d915c|9918ad7325d1cd3646928cdde8cc80330330890a
 vendor/lib/libcam.iopipe.so|04945f0e1e0b307b328d59f5d1b81641065bd47c
 vendor/lib/libcam.lcs.so|87f492d4d58c6bbdde1e75b03179d14b0bc635e1
 vendor/lib/libcam.pdtblgen.so|5492b99f4ec85f30471e931c046a29c10a1abbe6

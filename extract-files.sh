@@ -67,6 +67,9 @@ function blob_fixup() {
         vendor/lib*/libnvram.so)
             "${PATCHELF}" --add-needed "libshim_nvram.so" "${2}"
             ;;
+        vendor/lib/libcam.halsensor.so)
+            "${PATCHELF}" --add-needed "libshim_utils.so" "${2}"
+            ;;
         vendor/lib/libmtkcam_stdutils.so)
             "${PATCHELF}" --add-needed "libshim_mtkcam.so" "${2}"
             ;;

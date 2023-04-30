@@ -72,7 +72,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4.vendor
 
 PRODUCT_PACKAGES += \
-    libshim_mtkcam
+    libshim_mtkcam \
+    libshim_utils
 
 # Characteristics
 PRODUCT_CHARACTERISTICS := tablet
