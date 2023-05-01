@@ -90,7 +90,8 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
     libdrmclearkeyplugin \
     libmockdrmcryptoplugin \
-    libprotobuf-cpp-lite-v28
+    libprotobuf-cpp-lite-v28 \
+    libcrypto-v32
 
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.1.vendor

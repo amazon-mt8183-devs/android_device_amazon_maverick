@@ -492,8 +492,8 @@ vendor/bin/amzn_drmprov_tool|3667e1fb377149a844174de85924d80f0adac012
 vendor/etc/init/amzn_drmprov_check.rc|da1fbbda94871a18e1e51f921f38a4049b93e0a8
 
 # DHA (HW Module)
-vendor/lib/hw/amzn_dha.mt8183.so
-vendor/lib64/hw/amzn_dha.mt8183.so
+vendor/lib/hw/amzn_dha.mt8183.so|bd436e706360ee6536bb697f9b9a25e09c8a7a5d|8a0c408d6eabf54cd5b1db0bb0062f6e57387beb
+vendor/lib64/hw/amzn_dha.mt8183.so|cac85bb63c49a6b82cbacb678f9b3f71f4d788d4|e8b5c1f5d0d586208ed74eb236788c6d557cf74c
 
 # DHA (Interfaces)
 vendor/lib/fireos.hardware.fireosdha@2.0.so
