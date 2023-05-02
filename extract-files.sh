@@ -76,9 +76,6 @@ function blob_fixup() {
         vendor/lib/libwvhidl.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v28.so" "${2}"
             ;;
-        vendor/lib/libMtkOmxVdecEx.so)
-            "${PATCHELF}" --add-needed "libshim_omx.so" "${2}"
-            ;;
         vendor/lib/hw/audio.primary.mt8183.so)
             "${PATCHELF}" --replace-needed "libmedia_helper.so" "libmedia_helper-v28.so" "${2}"
             "${PATCHELF}" --replace-needed "libxml2.so" "libxml2-v28.so" "${2}"

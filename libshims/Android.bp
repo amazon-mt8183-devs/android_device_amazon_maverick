@@ -18,13 +18,6 @@ cc_library_shared {
 }
 
 cc_library_shared {
-    name: "libshim_omx",
-    srcs: ["libshim_omx.cpp"],
-    shared_libs: ["libui"],
-    proprietary: true,
-}
-
-cc_library_shared {
     name: "libshim_mtkcam",
     proprietary: true,
     compile_multilib: "32",
