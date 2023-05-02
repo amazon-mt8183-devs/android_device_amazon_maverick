@@ -73,6 +73,9 @@ function blob_fixup() {
         vendor/lib/libmtkcam_stdutils.so)
             "${PATCHELF}" --add-needed "libshim_mtkcam.so" "${2}"
             ;;
+        vendor/lib/libMtkOmxVdecEx.so)
+            "${PATCHELF}" --replace-needed "libui.so" "libui-v28.so" "${2}"
+            ;;
         vendor/lib/libwvhidl.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v28.so" "${2}"
             ;;
