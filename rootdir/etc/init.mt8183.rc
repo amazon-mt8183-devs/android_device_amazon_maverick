@@ -75,6 +75,7 @@ on fs
     write /proc/bootprof "INIT:Mount_START"
     write /sys/kernel/debug/tracing/trace_marker "B|1|Mount"
     mkdir /mnt/vendor/nvcfg
+    mkdir /mnt/vendor/keys 0751 root system
     mount_all /vendor/etc/fstab.mt8183 --early
     write /sys/kernel/debug/tracing/trace_marker "E"
     write /proc/bootprof "INIT:Mount_END"

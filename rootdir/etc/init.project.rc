@@ -63,11 +63,3 @@ on property:persist.sys.maverick.dt2w=1
     write /sys/touchscreen/link_input_dev/gesture_wakeup 1
 on property:persist.sys.maverick.dt2w=0
     write /sys/touchscreen/link_input_dev/gesture_wakeup 0
-
-# Create /keys mount point and mount
-on post-fs-data && property:ro.boot.mnt_keys_rw_opts=rw
-    mkdir /mnt/vendor/keys 0751 root system
-    mount_all /vendor/etc/fstab.mount_keys.rw
-on post-fs-data && property:ro.boot.mnt_keys_rw_opts=ro
-    mkdir /mnt/vendor/keys 0751 root system
-    mount_all /vendor/etc/fstab.mount_keys.ro
